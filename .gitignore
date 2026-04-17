@@ -1,2 +1,14 @@
-# Unimportant files
+# Unimportant or nonfunctional files
 /deprecated_files
+
+# Virtual environment
+venv/
+
+# Cashed data files
+*.csv
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
