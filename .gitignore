@@ -1,5 +1,7 @@
 # Unimportant or nonfunctional files
 /deprecated_files
+* Season
+
 
 # Virtual environment
 venv/
