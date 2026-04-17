@@ -1,0 +1,3 @@
+[console_scripts]
+run-fetch-post-season-players = main:main
+run-tabulate-playoff-teams = tabulate_playoff_teams:main

@@ -1,0 +1,4 @@
+InquirerPy
+colorama
+pandas
+requests

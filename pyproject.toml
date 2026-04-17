@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["main", "tabulate_playoff_teams", "helper_functions"]
+
+[project]
+name = "fantasy-football-etl"
+requires-python = ">=3.13"
+version = "1.0.0"
+description = "Post-season Fantasy Football ETL pipeline"
+dependencies = [
+    "InquirerPy",
+    "colorama",
+    "pandas",
+    "requests"
+]
+
+[project.scripts]
+run-fetch-post-season-players = "main:main"
+run-tabulate-playoff-teams = "tabulate_playoff_teams:main"
