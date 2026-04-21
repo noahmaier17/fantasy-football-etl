@@ -4,6 +4,8 @@
 
 Replaced a manual system of fetching NFL player statistics for the purpose of drafting a post-season fantasy football team (a format not supported by the variety of fantasy football apps) with an automated pipeline. Filters players based on team, sorts the players by regular season total PPR, and groups the players by position. Saved 3+ hours of manual work per draft, and has been used for a league of 10-12 players. 
 
+For the purpose of position depth, allows players to be randomly duplicated based on passed-in duplication parameter (default of 2/9 chance). Players with an asterisk in name are duplicated players.
+
 This repo includes some example output, look at `2023 Season/`, `2024 Season/`, and `2025 Season/`.
 
 ## Tech Stack

@@ -131,3 +131,17 @@ def write_to_csv(file: TextIOWrapper, list_of_players: list[str]) -> None:
 def stats_directory_name(season_year: int) -> str:
     """Creates the name of the directories to hold PPR stats."""
     return str(season_year) + " Season"
+
+def print_top_k_players(k: int, position: str, players: list[str]) -> list[str]:
+    """Prints top min(k, len(players)) players for a position."""
+    k = min(k, len(players))
+
+    for i, player_line in enumerate(players[len(players) - k:len(players)]):
+        player, team = player_line.split(";")
+        duplicated_text: str = ""
+
+        # If 0th character is an asterisk, it means the player was duplicated
+        if len(player) > 0 and player[0] == "*":
+            duplicated_text = "[duplicated player]"
+
+        print(f"{position} {i + 1}: {player} ({team}) {duplicated_text}")
