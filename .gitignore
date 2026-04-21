@@ -4,9 +4,6 @@
 # Virtual environment
 venv/
 
-# Cashed data files
-*.csv
-
 # Python
 __pycache__/
 *.pyc
